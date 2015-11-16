@@ -1,0 +1,21 @@
+---
+specversion: 0.0.2
+id: bitscout-qpid-router-app
+
+metadata:
+  name: QPID dispatch router for BitScout
+  appversion: 0.0.1
+  description: BitScout implementation of QPID dispatch router
+
+graph:
+  - name: bitscout-qpid-router
+    params:
+      - name: appname
+        description: Name given to docker run --name
+        default: bitscout-qpid-router
+      - name: image
+        description: Image to run
+        default: bitscout/qpid-router:latest
+    artifacts:
+      docker:
+        - file://artifacts/docker/run
