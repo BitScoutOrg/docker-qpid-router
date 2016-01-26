@@ -1,5 +1,5 @@
 FROM centos:centos7
-MAINTAINER The BitScout Community <community@TBA>
+MAINTAINER The ViaQ Community <community@TBA>
 
 RUN  yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
      yum install -y qpid-dispatch-router && \
