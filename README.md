@@ -1,2 +1,2 @@
 # docker-qpid-router
-BitScout qpid-router docker container
+ViaQ qpid-router docker container
